@@ -1,12 +1,15 @@
 # vector-migration-cli
 
+Una herramienta de línea de comandos (CLI) desarrollada en **TypeScript / Node.js** diseñada para ejecutar canalizaciones (pipelines) de extracción, transformación y carga (**ETL**) de datos empresariales desde APIs/Bases de datos tradicionales hacia un motor vectorial NoSQL (**Qdrant**), generando embeddings semánticos en local sin costes de API externas.
+
+![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue?style=for-the-badge&logo=typescript)
+![Node.js](https://img.shields.io/badge/Node.js-20.x-green?style=for-the-badge&logo=nodedotjs)
+![Qdrant](https://img.shields.io/badge/Qdrant-v1.9-red?style=for-the-badge&logo=qdrant)
+![Docker](https://img.shields.io/badge/Docker-Enabled-blue?style=for-the-badge&logo=docker)
+![Zod](https://img.shields.io/badge/Validation-Zod-purple?style=for-the-badge)
 
 
-
-## [ 0.1.1 ]
-
- - Ajuste en los saltos de linea en la arquitectura del proyecto.
- - Fuljo de trabajo planteado.
+##  Flujo de Trabajo (Pipeline ETL)
 
 ```text
  [ Inicio CLI ]
@@ -39,9 +42,7 @@
   [ Notificación de Éxito & Cierre ]
 ```
 
-## [ 0.1.0 ]
-
-- Primer diseño de arquitectura.
+## Arquitectura.
 
 ```text
 vector-migration-cli/

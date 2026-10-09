@@ -8,6 +8,7 @@
  - Ajuste en los saltos de linea en la arquitectura del proyecto.
  - Fuljo de trabajo planteado.
 
+```text
  [ Inicio CLI ]
         │
         ▼
@@ -36,7 +37,7 @@
       (NO)
         ▼
   [ Notificación de Éxito & Cierre ]
-
+```
 
 ## [ 0.1.0 ]
 

@@ -1,6 +1,11 @@
 # vector-migration-cli
 
 
+## [0.1.4] - 2026-10-10
+
+- `Dockerfile` con estrategia *multi-stage build* optimizada para producción con Node.js Alpine y usuario sin privilegios.
+- Pipeline de Integración Continua (CI) en GitHub Actions (`.github/workflows/ci.yml`) para validación de compilación y tipado automático.
+
 ## [ 0.1.3 ] 2026-10-10 
 
 - Servicio de vectorización local (`src/services/embedder.ts`) usando `@xenova/transformers` con el modelo `all-MiniLM-L6-v2` (vectores de 384 dimensiones sin costes de API externos).

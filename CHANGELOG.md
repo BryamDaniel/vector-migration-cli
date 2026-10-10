@@ -1,5 +1,12 @@
 # vector-migration-cli
 
+
+## [ 0.1.3 ] 2026-10-10 
+
+- Servicio de vectorización local (`src/services/embedder.ts`) usando `@xenova/transformers` con el modelo `all-MiniLM-L6-v2` (vectores de 384 dimensiones sin costes de API externos).
+- Servicio de persistencia en Qdrant (`src/services/vectorStore.ts`) con verificación/creación automática de colecciones e inserción masiva por lotes (*bulk upsert*).
+- Integración completa del orquestador ETL en `src/index.ts` unificando extracción, validación Zod, vectorización local y persistencia vectorial.
+
 ## [ 0.1.2 ] 2026-10-10 
 
 - Módulo Extractor (`src/services/extractor.ts`) para consulta paginada a la API de DummyJSON usando `Async Generators`.

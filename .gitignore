@@ -43,3 +43,6 @@ Thumbs.db
 
 # Docker temp files
 .docker/
+
+# Data Quality Audit Reports
+dlq-report.json

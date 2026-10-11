@@ -1,5 +1,10 @@
 # vector-migration-cli
 
+## [0.1.5] - 2026-10-11
+
+- Sistema de **Dead Letter Queue (DLQ)** (`src/services/dlq.ts`) para la captura, aislamiento y auditoría de registros corruptos o anómalos.
+- Validación tolerante a fallos en tiempo de ejecución utilizando `safeParse` de Zod en el módulo extractor, previniendo interrupciones del pipeline ETL ante esquemas inesperados de terceros.
+- Generación automática del reporte de calidad de datos (`dlq-report.json`) al finalizar la ejecución del proceso.
 
 ## [0.1.4] - 2026-10-10
 

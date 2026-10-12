@@ -9,6 +9,13 @@ Una herramienta de línea de comandos (CLI) desarrollada en **TypeScript / Node.
 ![Zod](https://img.shields.io/badge/Validation-Zod-purple?style=for-the-badge)
 
 
+## 🚀 Highlights Técnicos y de Arquitectura
+
+* **Multihilo Real (Worker Threads):** Aislamiento de la inferencia pesada de IA de `@xenova/transformers` en un hilo independiente, manteniendo el *Event Loop* principal de Node.js 100% fluido y libre de bloqueos.
+* **Caché LRU Persistente con Hash SHA-256:** Sistema inteligente de sincronización delta (`embedding-cache.json`) que evita re-inferencias en registros sin cambios, reduciendo los tiempos de ejecución del ETL a menos de un segundo.
+* **Tolerancia a Fallos y DLQ (Dead Letter Queue):** Captura y aislamiento automático de registros corruptos o anómalos en un reporte de auditoría (`dlq-report.json`) sin interrumpir el flujo del pipeline.
+* **CLI Interactiva con Commander:** Interfaz optimizada para búsquedas semánticas en lenguaje natural con soporte de banderas personalizadas (`--limit`, `-l`).
+
 ##  Flujo de Trabajo (Pipeline ETL)
 
 ```text

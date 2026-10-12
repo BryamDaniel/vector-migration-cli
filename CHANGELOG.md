@@ -1,5 +1,12 @@
 # vector-migration-cli
 
+## [0.1.6] - 2026-10-12
+
+- Arquitectura multihilo con **Worker Threads** (`src/workers/embedder.worker.ts`) para aislar la inferencia pesada de IA de `@xenova/transformers`, manteniendo el *Event Loop* principal de Node.js 100% fluido y libre de bloqueos.
+- **Caché LRU persistente con huella SHA-256** (`embedding-cache.json`) para optimización de sincronización incremental (*Delta Sync*), omitiendo re-inferencias en registros sin cambios y reduciendo drásticamente los tiempos de ejecución del ETL a menos de un segundo.
+- Actualización de la **CLI de búsqueda semántica** mediante **Commander** (`src/search-cli.ts`), incorporando control de parámetros interactivos, soporte para banderas personalizadas (`--limit`, `-l`) y ayuda integrada (`--help`).
+
+
 ## [0.1.5] - 2026-10-11
 
 - Sistema de **Dead Letter Queue (DLQ)** (`src/services/dlq.ts`) para la captura, aislamiento y auditoría de registros corruptos o anómalos.
